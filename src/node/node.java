@@ -2,7 +2,8 @@ package node;
 
 import java.util.Iterator;
 
-public class node<T> {
+
+public class node<T> implements Comparable {
      private T value=null;
      private node<T> next=null;
      private node<T> back=null;
@@ -39,6 +40,7 @@ public class node<T> {
  	
  	
  	
+ 	
      
 	public T getValue() {
 		return value;
@@ -58,5 +60,15 @@ public class node<T> {
 	public void setBack(node<T> back) {
 		this.back = back;
 	}
+
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+	
    
 }
